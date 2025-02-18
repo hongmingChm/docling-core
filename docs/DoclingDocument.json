@@ -216,6 +216,41 @@
           "title": "Text",
           "type": "string"
         },
+        "captions": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/RefItem"
+          },
+          "title": "Captions",
+          "type": "array"
+        },
+        "references": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/RefItem"
+          },
+          "title": "References",
+          "type": "array"
+        },
+        "footnotes": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/RefItem"
+          },
+          "title": "Footnotes",
+          "type": "array"
+        },
+        "image": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ImageRef"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
         "code_language": {
           "$ref": "#/$defs/CodeLanguageLabel",
           "default": "unknown"
